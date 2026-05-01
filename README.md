@@ -93,7 +93,7 @@ A practical schema modification — adds a `CustomerID_Surname` column formatted
 
 ## Power BI Dashboard
 
-## 💡 Key Insights
+## Key Insights
 
 After running through every query, a few patterns stand out clearly:
 
