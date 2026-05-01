@@ -1,10 +1,6 @@
-# 🏦 Bank Customer Churn Analysis
+# Bank Customer Churn Analysis
 
-A end-to-end data analytics project built to understand *why* bank customers leave — and what can realistically be done to stop it. The analysis combines SQL-based exploration with a Power BI dashboard to turn raw customer records into decisions that a retention team could actually act on.
-
----
-
-## 📌 Project Overview
+## Project Overview
 
 Customer churn is one of the most expensive problems a bank quietly ignores until it becomes a crisis. Acquiring a new customer costs five to seven times more than keeping an existing one, yet most banks still treat churn as a reactive problem — they notice it after the account is closed.
 
@@ -14,22 +10,20 @@ This project flips that. Using a dataset covering customer demographics, account
 
 ---
 
-## 🗂️ Database Schema
+## Database Schema
 
 The analysis runs across four relational tables:
 
 | Table | Key Columns |
-|---|---|
 | `Bank_Churn` | CustomerId, CreditScore, Balance, NumOfProducts, HasCrCard, IsActiveMember, Tenure, Exited |
 | `Customer_Info` | CustomerId, Surname, Age, GenderID, GeographyID, EstimatedSalary, Bank_DOJ |
 | `Geography` | GeographyID, GeographyLocation |
 | `Gender` | GenderID, GenderCategory |
 
----
 
-## 🔍 What the SQL Actually Does
+## SQL Findings
 
-The queries go well beyond basic counts. Here's a breakdown of the analytical angles covered:
+Here's a breakdown of the analytical angles covered:
 
 **Regional Balance Distribution**
 Calculates average, max, min, and standard deviation of account balances per region — useful for spotting which markets hold higher-value but potentially at-risk customers.
@@ -96,11 +90,7 @@ A practical schema modification — adds a `CustomerID_Surname` column formatted
 
 ---
 
-## 📊 Power BI Dashboard
-
-The `.pbix` file translates all of this into visual form, with filters for region, gender, activity status, and time period. Key views include churn rate breakdowns, balance distribution maps, credit score segmentation charts, and cohort-level retention trends.
-
----
+## Power BI Dashboard
 
 ## 💡 Key Insights
 
@@ -126,7 +116,7 @@ High earners do not necessarily hold proportionally high balances. For churned c
 
 ---
 
-## 🎯 Retention Strategy Recommendations
+## Retention Strategy
 
 Based on what the data actually shows:
 
@@ -147,29 +137,3 @@ The data shows that having a credit card has a measurable but limited effect on 
 
 **Build geographic + gender-specific offers carefully.**
 The income ranking analysis shows gender-based salary differences vary by region. A blanket wealth management offer that works in one geography may be poorly calibrated for another. Segmented offers will outperform generic ones.
-
----
-
-## 📁 Repository Structure
-
-```
-├── Bank_Customer_Behaviour_Retain_Analysis.sql   # All SQL queries
-├── Bank_Customer_Churn_Analysis.pbix             # Power BI dashboard
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-1. Restore or create the `Sarbajit` database in SQL Server.
-2. Import the four core tables: `Bank_Churn`, `Customer_Info`, `Geography`, `Gender`.
-3. Run the `.sql` file in sequence — each query is commented with its purpose.
-4. Open the `.pbix` file in Power BI Desktop and refresh the data source connection.
-
----
-
-## 👤 Author
-
-**Sarbajit** — Data Analyst  
-Feel free to connect, raise issues, or fork the project if you're working on something similar.
