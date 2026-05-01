@@ -15,6 +15,7 @@ This project flips that. Using a dataset covering customer demographics, account
 The analysis runs across four relational tables:
 
 | Table | Key Columns |
+
 | `Bank_Churn` | CustomerId, CreditScore, Balance, NumOfProducts, HasCrCard, IsActiveMember, Tenure, Exited |
 | `Customer_Info` | CustomerId, Surname, Age, GenderID, GeographyID, EstimatedSalary, Bank_DOJ |
 | `Geography` | GeographyID, GeographyLocation |
