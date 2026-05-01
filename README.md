@@ -1,4 +1,4 @@
-# Bank Customer Churn Analysis
+# Bank Customer Behavior Retention Analysis
 
 ## Project Overview
 
